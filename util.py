@@ -113,7 +113,7 @@ def extract_video_imgs(video, output_dir):
                 frame_file = "%s/frame_%s.jpg" % (output_dir, pad_zeros(i))
                 cv2.imwrite(frame_file, image)     # save frame as JPEG file
         else:
-            print("WARNING: frame #%d could not be read. Stopping.")
+            print("WARNING: frame #%d could not be read. Stopping." % i)
             break
 
 def do_files_exists(file_list):
